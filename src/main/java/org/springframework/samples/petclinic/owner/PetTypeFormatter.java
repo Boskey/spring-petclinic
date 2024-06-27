@@ -19,7 +19,6 @@ import java.text.ParseException;
 import java.util.Collection;
 import java.util.Locale;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import org.springframework.stereotype.Component;
 
@@ -38,7 +37,6 @@ public class PetTypeFormatter implements Formatter<PetType> {
 
 	private final PetRepository pets;
 
-	@Autowired
 	public PetTypeFormatter(PetRepository pets) {
 		this.pets = pets;
 	}
